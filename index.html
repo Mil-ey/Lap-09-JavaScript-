@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lap 10 API calls </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <h1> API calls </h1>
+    <div class="buttons">
+        <button id="fetchButton"> Fetch Data with fetch()</button>
+        <button id="xhrButton"> Fetch Data with XHR</button>
+    </div>
+    <div id="output"> Data outputs</div>
+    
+    <form id="PostForm" method="POST">
+        <input type="text" id="post-title" placeholder="Title" required>
+        <input type="text" id="post-body" placeholder="Body" required>
+        <br><br>
+        <button type="submit"> Submit Post</button>
+    </form>
+    <br> <br>
+<form id="PutForm" method="POST">
+        <input type="text" id="put-id" name="put-id" placeholder="ID" required>
+        <input type="text" id="put-title" name= "put-title" putlaceholder="Title" required>
+        <input type="text" id="put-body" name="put-body" placeholder="Body" required>
+        <br><br>
+        <button type="submit"> Update Post</button>
+    </form>
+
+
+    <br> <br>
+    <form id="DeleteForm" method="POST">
+        <input type="text" id="delete-id" placeholder="ID" required>
+        <br><br>
+        <button type="submit"> Delete Post</button>
+    </form>
+    <br> <br>
+</body>
+</html>
